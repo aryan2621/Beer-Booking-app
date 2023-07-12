@@ -1,0 +1,95 @@
+<app-nav></app-nav>
+<div class="container">
+  <div *ngIf="products.length <= 0">
+    <div id="main">
+      <div class="fof">
+        <h1>Cart is Empty !! 404</h1>
+      </div>
+    </div>
+  </div>
+  <ng-template #successModal>
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">Modal</h4>
+      <button
+        type="button"
+        class="btn btn-close close pull-right"
+        aria-label="Close"
+        (click)="modalRef?.hide()"
+      >
+        X
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>Your order has been successfully placed</p>
+    </div>
+    <div class="modal-footer">
+      <a [routerLink]="['/']">Move to home Page</a>
+    </div>
+  </ng-template>
+  <section class="py-5" *ngIf="products.length > 0">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 d-flex">
+        <div class="ms-lg-4 mt-4 mt-lg-0 w-75 mx-auto">
+          <h6 class="mb-3">Summary</h6>
+          <div class="d-flex justify-content-between">
+            <p class="mb-2">Total price:</p>
+            <p class="mb-2">₹ {{ getTotalPrice() }}</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p class="mb-2">Discount:</p>
+            <p class="mb-2 text-danger">-₹ {{ getDiscount() }}</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p class="mb-2">Shipping cost:</p>
+            <p class="mb-2">+ ₹ {{ getShipping() }}</p>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-between">
+            <p class="mb-2">Total price:</p>
+            <p class="mb-2 fw-bold">₹ {{ getGrandTotal() }}</p>
+          </div>
+          <hr class="my-2" />
+          <google-pay-button
+            environment="TEST"
+            buttonColor="black"
+            buttonType="checkout"
+            buttonLocale="en"
+            buttonSizeMode="fill"
+            [paymentRequest]="paymentRequest"
+            (loadpaymentdata)="onLoadPaymentData($event)"
+          >
+          </google-pay-button>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6">
+        <h6 class="text-dark my-4">Items in cart</h6>
+        <div *ngFor="let item of products; trackBy: trackProduct">
+          <div class="d-flex align-items-center mb-4">
+            <div class="me-3 position-relative">
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill badge-secondary"
+              >
+                1
+              </span>
+              <img
+                [src]="item.photo"
+                style="max-height: 96px; max-width: 96px"
+                class="img-sm rounded border"
+              />
+            </div>
+            <div class="">
+              <a href="#" class="nav-link">
+                {{ item.shopName }} <i>{{ item.name }}</i> <br />
+                Qty: {{ item.quantity }}
+              </a>
+              <div class="price text-muted">
+                Total :{{ getPrice(item.quantity, item.id) }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>

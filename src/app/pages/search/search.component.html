@@ -1,0 +1,31 @@
+<app-nav></app-nav>
+<div class="row gallery w-[80vw] mx-auto my-5">
+  <div class="col p-1 md:p-2">
+    <img
+      alt="gallery"
+      class="block h-full w-80 rounded-lg object-cover object-center"
+      [src]="places[0].img"
+    />
+  </div>
+  <div class="col p-1 md:p-2">
+    <img
+      alt="gallery"
+      class="block h-full w-80 rounded-lg object-cover object-center"
+      [src]="places[1].img"
+    />
+  </div>
+  <div class="col p-1 md:p-2">
+    <img
+      alt="gallery"
+      class="block h-full w-80 rounded-lg object-cover object-center"
+      [src]="places[2].img"
+    />
+  </div>
+</div>
+<div class="row">
+  <app-shops
+  [shopList]="shopList"
+  (menu)="goToMenu($event)"></app-shops>
+  <app-products [show]="show" [shop]="shop"></app-products>
+</div>
+<app-footer></app-footer>

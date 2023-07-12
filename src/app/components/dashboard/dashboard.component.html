@@ -1,0 +1,202 @@
+<div class="px-6 py-12 text-center md:px-12 lg:text-left">
+  <div
+    class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl xl:px-32"
+  >
+    <div class="grid items-center md:grid-cols-2">
+      <div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0">
+        <div
+          class="block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]"
+        >
+          <h3
+            class="mt-2 mb-16 text-2xl font-bold tracking-tight md:text-3xl xl:text-5xl"
+          >
+            Raise a glass to exceptional taste and endless possibilities!
+          </h3>
+          <a
+            (click)="scrollTo(target)"
+            class="scroll inline-flex overflow-hidden text-white bg-gray-900 rounded group"
+          >
+            <span
+              class="px-3.5 py-2 text-white bg-purple-500 group-hover:bg-purple-600 flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                id="down-arrow"
+                class="animate-bounce w-6 h-6"
+              >
+                <path
+                  d="M11.29,15.71a1,1,0,0,0,.33.21,1,1,0,0,0,.76,0,1,1,0,0,0,.33-.21l3-3a1,1,0,0,0-1.42-1.42L13,12.59V9a1,1,0,0,0-2,0v3.59l-1.29-1.3a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.42ZM12,22A10,10,0,1,0,2,12,10,10,0,0,0,12,22ZM12,4a8,8,0,1,1-8,8A8,8,0,0,1,12,4Z"
+                ></path>
+              </svg>
+            </span>
+            <span class="pl-4 pr-5 py-2.5">Get Started</span>
+          </a>
+        </div>
+      </div>
+      <div class="md:mb-12 lg:mb-0">
+        <img
+          src="https://images.unsplash.com/photo-1485872299829-c673f5194813?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFsY29ob2x8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+          class="w-full rounded-lg shadow-lg dark:shadow-black/20"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+  <div class="sm:pt-16">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+        <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+          <dt class="text-base leading-7 text-gray-600">
+            Transactions every 24 hours
+          </dt>
+          <dd
+            class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+          >
+            44 million
+          </dd>
+        </div>
+        <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+          <dt class="text-base leading-7 text-gray-600">
+            Assets under holding
+          </dt>
+          <dd
+            class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+          >
+            $119 trillion
+          </dd>
+        </div>
+        <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+          <dt class="text-base leading-7 text-gray-600">New users annually</dt>
+          <dd
+            class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+          >
+            46,000
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div class="container my-12 mx-auto md:px-6" #target>
+    <div
+      class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+    >
+      <div class="flex flex-wrap items-center">
+        <div
+          class="block w-full shrink-0 grow-0 basis-auto lg:flex lg:w-6/12 xl:w-4/12"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1627933752827-70b978d9e73d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bGlxdW9yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            alt="Trendy Pants and Shoes"
+            class="w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
+          />
+        </div>
+        <div class="w-full shrink-0 grow-0 basis-auto lg:w-6/12 xl:w-8/12 pt-2">
+          <div class="px-6 py-6 md:px-">
+            <div class="flex items-center">
+              <h2 class="pb-2 mr-2 text-4xl font-bold">Why is it so great?</h2>
+              <a
+                [routerLink]="['/search']"
+                class="relative rounded px-5 py-2.5 overflow-hidden group bg-green-500 relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
+              >
+                <svg
+                  fill="#000000"
+                  height="30px"
+                  width="30px"
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 209.833 209.833"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M31.251,139.906c0,4.142-3.358,7.5-7.5,7.5H7.5c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h16.251
+             C27.893,132.406,31.251,135.763,31.251,139.906z M209.833,159.282v6.199c0,4.142-3.358,7.5-7.5,7.5h-41.615H131.65
+             c-0.003,0-0.006,0-0.008,0c-0.003,0-0.005,0-0.008,0h-43.62c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h15.496l-18.427-10.575
+             H48.793c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h10.154l-33.158-19.03c-1.74-0.999-3.008-2.654-3.519-4.595
+             c-0.511-1.94-0.224-4.005,0.799-5.732l17.774-30.012H23.751c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h25.976l7.987-13.486
+             c1.644-2.776,4.875-4.188,8.032-3.51l51.488,11.085l1.509-9.011c0.685-4.084,4.547-6.843,8.636-6.158
+             c4.085,0.684,6.842,4.551,6.158,8.636l-3.119,18.622l6.202,11.332l-9.488,6.375c-3.438,2.31-4.353,6.97-2.043,10.408
+             c1.448,2.155,3.818,3.318,6.232,3.318c1.438,0,2.893-0.413,4.176-1.275l8.355-5.613l5.956,10.881l-6.856,4.606
+             c-3.438,2.31-4.353,6.97-2.043,10.408c1.448,2.155,3.818,3.318,6.232,3.318c1.438,0,2.893-0.413,4.176-1.275l5.723-3.845l5.16,9.428
+             h10.634C193.235,122.282,209.833,138.88,209.833,159.282z M76.367,101.502c7.837,0,14.212-6.375,14.212-14.212
+             s-6.375-14.212-14.212-14.212S62.154,79.453,62.154,87.29S68.53,101.502,76.367,101.502z M194.795,157.981
+             c-0.676-11.527-10.268-20.699-21.962-20.699h-11.273l-15.138,20.699h14.296H194.795z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <p class="mb-6 pb-2 text-neutral-500 dark:text-neutral-300">
+              Nunc tincidunt vulputate elit. Mauris varius purus malesuada neque
+              iaculis malesuada. Aenean gravida magna orci, non efficitur est
+              porta id. Donec magna diam.
+            </p>
+
+            <div
+              class="grid gap-x-6 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3"
+            >
+              <div class="mb-6">
+                <p class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="mr-3 h-6 w-6 text-neutral-900 dark:text-neutral-100"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Support 24/7
+                </p>
+              </div>
+
+              <div class="mb-6">
+                <p class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="mr-3 h-6 w-6 text-neutral-900 dark:text-neutral-100"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Analytics
+                </p>
+              </div>
+
+              <div class="mb-6">
+                <p class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="mr-3 h-6 w-6 text-neutral-900 dark:text-neutral-100"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    /></svg
+                  >Components
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
