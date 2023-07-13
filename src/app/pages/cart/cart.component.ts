@@ -86,6 +86,7 @@ export class CartComponent {
         currencyCode: 'INR',
         countryCode: 'IN',
       },
+      shippingAddressRequired: true,
     };
   }
   onLoadPaymentData(e: any) {
