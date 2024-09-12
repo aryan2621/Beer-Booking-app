@@ -22,7 +22,6 @@ export class CartComponent {
   modalRef?: BsModalRef;
   constructor(
     private cartItemService: CartItemService,
-    private authService: AuthService,
     private modalService: BsModalService
   ) {}
 
